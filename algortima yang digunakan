@@ -1,0 +1,13 @@
+Identifikasi Algoritma yang Digunakan
+1.Deteksi Jangkauan (Detection & Distance Check):
+Algoritma: Euclidean Distance / Manhattan Distance.
+Fungsi: Menghitung jarak spasial antara posisi Player dan Enemy untuk mengevaluasi apakah Player berada di dalam radius deteksi.
+2.Pengambilan Keputusan (Decision Making):
+Algoritma: Finite State Machine (FSM) atau Decision Tree.
+Fungsi: Mengatur kondisi perilaku Enemy (misal: transisi dari state IDLE/PATROL ke CHASE ketika Jarak <= RadiusDeteksi).
+3.Pencarian Jalur (Pathfinding):
+Algoritma: Algoritma A* (A-Star) atau Dijkstra.
+Fungsi: Memetakan struktur dungeon berbentuk grid atau graph dan menemukan rute terpendek yang terhindar dari rintangan/dinding untuk menuju lokasi Player.
+4.Pergerakan & Kemudi (Movement & Steering):
+Algoritma: Steering Behaviour (Seek Algorithm).
+Fungsi: Menghitung vektor kecepatan dan memperbarui posisi Enemy secara berulang (per frame) menuju titik (waypoint) berikutnya pada rute hasil pathfinding.
